@@ -756,9 +756,9 @@
     <div class="painel-secao">
       <h3>🎨 Cores Rápidas</h3>
       <div class="btn-preview-tema">
-        <button onclick="presetCor('#00ff80')" style="color:#00ff80;">🟢 Verde</button>
+        <button onclick="presetCor('#00ff80')" style="color:#00bd39;">🟢 Verde</button>
         <button onclick="presetCor('#a855f7')" style="color:#a855f7;">🟣 Roxo</button>
-        <button onclick="presetCor('#3b82f6')" style="color:#3b82f6;">🔵 Azul</button>
+        <button onclick="presetCor('#3b82f6')" style="color:#0074bd;">🔵 Azul</button>
         <button onclick="presetCor('#ec4899')" style="color:#ec4899;">🩷 Rosa</button>
         <button onclick="presetCor('#f97316')" style="color:#f97316;">🟠 Laranja</button>
         <button onclick="presetCor('#ef4444')" style="color:#ef4444;">🔴 Vermelho</button>
@@ -852,13 +852,13 @@
       <label>📺 Nome do Canal Padrão</label>
       <input type="text" id="padraoNomeCanal" placeholder="Ex: Nome do seu canal">
       <label>💬 Subtítulo Padrão</label>
-      <input type="text" id="padraoSubtitulo" value="Downloads exclusivos 🐼💚" placeholder="Ex: Downloads exclusivos 🐼💚">
+      <input type="text" id="padraoSubtitulo" value="Downloads exclusivos" placeholder="Ex: Downloads exclusivos">
       <label>⬇️ Nome da Seção de Downloads</label>
       <input type="text" id="padraoTituloDownloads" value="Downloads" placeholder="Ex: Downloads">
       <div class="campo-hint">💡 Você pode trocar o nome que aparece acima dos botões de download.</div>
       <div class="campo-hint">💡 Nome do canal, subtítulo e nome da seção de downloads ficam definidos aqui e são usados automaticamente em todas as páginas novas.</div>
 
-      <label>🐼 Logo Padrão da Página</label>
+      <label>Logo Padrão da Página</label>
       <input type="text" id="padraoLogoUrl" placeholder="https://exemplo.com/logo.png">
       <div class="campo-hint">💡 O logo é definido somente aqui e será usado como padrão nas páginas.</div>
 
@@ -998,7 +998,7 @@ https://exemplo.com/link2"></textarea>
     </div>
 
     <div class="secao">
-      <h2>⬇️ Downloads</h2>
+      <h2>📥 Downloads</h2>
       <div id="listaDownloads"></div>
       <button class="btn" onclick="adicionarDownload()">+ Adicionar Download</button>
     </div>
@@ -1245,7 +1245,7 @@ const REDES = {
 const VIDEOS_PADRAO_FABRICA = [];
 const VIDEO_PRINCIPAL_PADRAO_FABRICA = [];
 const SHOPEE_PADRAO_FABRICA = [];
-const DOWNLOADS_PADRAO_FABRICA = [{ id: "un1ca", nome: "un1ca", linkFinal: "https://drive.google.com/" }];
+const DOWNLOADS_PADRAO_FABRICA = [{ id: "Arquivo", nome: "Arquivo", linkFinal: "https://drive.google.com/" }];
 
 let VIDEOS_PADRAO = [...VIDEOS_PADRAO_FABRICA];
 let VIDEO_PRINCIPAL_PADRAO = [...VIDEO_PRINCIPAL_PADRAO_FABRICA];
@@ -1253,7 +1253,7 @@ let SHOPEE_PADRAO = [...SHOPEE_PADRAO_FABRICA];
 let DOWNLOADS_PADRAO = JSON.parse(JSON.stringify(DOWNLOADS_PADRAO_FABRICA));
 let LOGO_PADRAO = "";
 let NOME_CANAL_PADRAO = "";
-let SUBTITULO_PADRAO = "Downloads exclusivos 🐼💚";
+let SUBTITULO_PADRAO = "Downloads exclusivos ";
 let TITULO_DOWNLOADS_PADRAO = "Downloads";
 let LINKS_DOWNLOAD_ATIVOS = false;
 let ANUNCIOS_DOWNLOAD_P1_PADRAO = [];
@@ -2122,7 +2122,7 @@ ${adSocialBarHTML}
     <div class="logo" id="logo2">🐼</div>
     <div>
       <h1 id="tituloP2">${c.nomeCanal}</h1>
-      <p>Download em andamento 🐼💚</p>
+      <p>Download em andamento</p>
     </div>
   </header>
 
@@ -2161,7 +2161,7 @@ ${adSocialBarHTML}
 
   <div class="ad-footer">${adRodapeP2HTML}</div>
 
-  <footer>© 2026 ${c.nomeCanal} — Todos os direitos reservados 🐼</footer>
+  <footer>© 2026 ${c.nomeCanal} — Todos os direitos reservados ao canal panda ansioso </footer>
 </div>
 
 <script>
