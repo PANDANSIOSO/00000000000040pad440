@@ -868,19 +868,10 @@
       <label>🎬 Vídeos Sugeridos — um por linha</label>
       <textarea id="padraoVideos" placeholder="Ex: dQw4w9WgXcQ&#10;Um ID ou link do YouTube por linha"></textarea>
 
-      <label>🔗 Links dos Botões de Download — um por linha</label>
-      <textarea id="padraoShopee" placeholder="Ex: https://exemplo.com/link-do-produto&#10;Um link por linha"></textarea>
-      <div class="check-row" id="chk-linksDownloadPadrao" onclick="toggleLinksDownloadPadrao()">
-        <div class="check-box">✓</div>
-        <div>
-          <div class="check-label">Ativar links de intermediação</div>
-          <div class="check-hint">Se ativado: o primeiro clique passa pela etapa de link antes da contagem. Se desativado: vai direto para a contagem e depois para o download.</div>
-        </div>
-      </div>
-
       <label>🔗 Links de anúncio dos botões de Download da primeira página — um por linha</label>
-      <textarea id="padraoAnunciosDownloadP1" placeholder="https://exemplo.com/anuncio1
-https://exemplo.com/anuncio2"></textarea>
+      <textarea id="padraoAnunciosDownloadP1" placeholder="Ex: https://exemplo.com/anuncio1
+https://exemplo.com/anuncio2;Um link por linha"></textarea>
+      
       <div class="campo-hint">💡 Estes links são padrões globais da engrenagem e serão usados nos botões de download da primeira página. Se houver mais de um, um será escolhido aleatoriamente. Se nenhum link for cadastrado, o botão funciona normalmente, sem abrir propaganda.</div>
       <div class="check-row" id="chk-anunciosDownloadP1" onclick="toggleAnunciosDownloadP1()">
         <div class="check-box">✓</div>
@@ -889,6 +880,18 @@ https://exemplo.com/anuncio2"></textarea>
           <div class="check-hint">Se ativado e houver links cadastrados, um deles será usado no clique do botão. Se estiver vazio, o botão funciona normalmente.</div>
         </div>
       </div>
+
+      <label>🔗 Links dos Botões de Download da segunda página — um por linha</label>
+      <textarea id="padraoShopee" placeholder="Ex: https://exemplo.com/anuncio1
+https://exemplo.com/anuncio2;Um link por linha"></textarea>
+      <div class="check-row" id="chk-linksDownloadPadrao" onclick="toggleLinksDownloadPadrao()">
+        <div class="check-box">✓</div>
+        <div>
+          <div class="check-label">Ativar links de intermediação</div>
+          <div class="check-hint">Se ativado: o primeiro clique passa pela etapa de link antes da contagem. Se desativado: vai direto para a contagem e depois para o download.</div>
+        </div>
+      </div>
+
       <label>📱 Redes Sociais Padrão</label>
       <div class="padrao-aviso" style="margin-bottom:10px;">💡 Cadastre aqui as redes que você quer usar como padrão. Elas ficam salvas na engrenagem e <b>não aparecem preenchidas</b> no editor de uma nova página.</div>
       <div id="listaPadraoSociais"></div>
